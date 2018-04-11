@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "543481124445",
+    "firebase_url": "https://colleguescheduller.firebaseio.com",
+    "project_id": "colleguescheduller",
+    "storage_bucket": "colleguescheduller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543481124445:android:2d24890b8cc93a82",
+        "android_client_info": {
+          "package_name": "csc.colleguescheduller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543481124445-ig6oiij1gcri7cb5lmvqumdlis064uti.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "csc.colleguescheduller",
+            "certificate_hash": "321768b46d046a17c6922dd4cd73aef713211ff9"
+          }
+        },
+        {
+          "client_id": "543481124445-eecrj0su0lm1tp5fbadcsauvpjgo6lpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgYbo_apxx6DZEoE9RC1eRs3hzzMQ1eDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543481124445-eecrj0su0lm1tp5fbadcsauvpjgo6lpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

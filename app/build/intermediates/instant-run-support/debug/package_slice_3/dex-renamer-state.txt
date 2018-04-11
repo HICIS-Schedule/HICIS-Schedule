@@ -1,0 +1,4 @@
+#Wed Apr 11 10:46:58 EET 2018
+base.0=C\:\\Users\\Me5a\\AndroidStudioProjects\\CollegueScheduller\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\80
+path.0=classes.dex
+renamed.0=classes.dex

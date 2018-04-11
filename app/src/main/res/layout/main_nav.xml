@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ahmed Mokhtar Hassanin -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/main_nav_profile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        android:background="@color/app_background"
+        android:clickable="true"
+        android:onClick="nav_item_click">
+
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_txtv_degree_bottom" app:layout_constraintGuide_percent=".9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <android.support.constraint.Guideline android:id="@+id/mainview_nav_gd_txtv_start" app:layout_constraintGuide_percent=".05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <TextView android:id="@+id/mainview_nav_txtv_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/mainview_nav_gd_txtv_degree_bottom"
+            app:layout_constraintStart_toEndOf="@id/mainview_nav_gd_txtv_start"
+            android:text="Admin Assistant"/>
+        <TextView
+            android:id="@+id/mainview_nav_txtv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@id/mainview_nav_txtv_degree"
+            app:layout_constraintStart_toEndOf="@id/mainview_nav_gd_txtv_start"
+            android:text="DR. Mohammed Ahmed"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".02" />
+
+    <LinearLayout android:id="@+id/mainview_nav_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".68"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>
