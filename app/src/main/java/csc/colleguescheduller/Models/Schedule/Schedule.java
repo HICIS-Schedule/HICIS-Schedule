@@ -13,46 +13,40 @@ public class Schedule {
     private Semester semester;
     private Map<String, Object> day;
 
-
     public Schedule() {
-        super();
+
     }
 
-
-    public void setyear(Year year) {
+    public void setYear(Year year) {
         this.year = year;
     }
 
-    public Year getyear() {
-        return year;
+    public Year getYear() {
+        return this.year;
     }
 
-    public void setspecialization(Specialization specialization) {
+    public void setSpecialization(Specialization specialization) {
         this.specialization = specialization;
     }
 
-    public Specialization getspecialization() {
-        return specialization;
+    public Specialization getSpecialization() {
+        return this.specialization;
     }
 
-    public void setsemester(Semester semester) {
+    public void setSemester(Semester semester) {
         this.semester = semester;
     }
 
-    public Semester getsemester() {
-        return semester;
+    public Semester getSemester() {
+        return this.semester;
     }
 
-    public void setday(Map<String, Object> day) {
+    public void setDay(Map<String, ScheduleDay> day) {
         this.day = day;
     }
 
-    public Map<String, Object> getday() {
-        return day;
+    public Map<String, ScheduleDay> getDay() {
+        return this.day;
     }
 
-
 }
-
-	
-	
