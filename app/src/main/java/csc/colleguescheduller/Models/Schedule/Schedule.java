@@ -1,24 +1,10 @@
-/**
- * @author SiCo
- */
-/**
- * @author SiCo
- *
- */
 package csc.colleguescheduller.Models.Schedule;
 
-/*
-Amr Samir
- */
-
-
-import csc.colleguescheduller.Models.Schedule.Schema.*;
-
+import csc.colleguescheduller.Models.Schedule.Schema;
+import csc.colleguescheduller.Models.Schema.Schema;
 import java.util.Map;
 
-
 public class Schedule {
-
 
     private Year year;
     private Specialization specialization;
