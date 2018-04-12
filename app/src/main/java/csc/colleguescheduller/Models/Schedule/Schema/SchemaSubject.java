@@ -1,42 +1,34 @@
 package csc.colleguescheduller.Models.Schedule.Schema;
 
-/*
-Amr Samir
- */
-
 import csc.colleguescheduller.Models.Subjects.Subject;
 
 public class SchemaSubject {
 
-    private Subject subject;
-    private int noHoursApplied;
-    private int noHoursPractical;
+    private String subjectID;
+    private int noOfAppliedHours;
+    private int noOfPracticalHours;
 
-    public void setsubject(Subject subject) {
-        this.subject = subject;
+    public void setSubject(Subject id) {
+        this.subjectID = id;
     }
 
-    public Subject getsubject() {
-        return subject;
+    public String getSubject() {
+        return this.subjectID;
     }
 
-    public void setnoHoursApplied(int noHoursApplied) {
-        this.noHoursApplied = noHoursApplied;
+    public void setNoOfAppliedHours(int noOfAppliedHours) {
+        this.noOfAppliedHours = noOfAppliedHours;
     }
 
-    public int getnoHoursApplied() {
-        return noHoursApplied;
-
+    public int getNoHoursApplied() {
+        return this.noOfAppliedHours;
     }
 
-    public void setnoHoursPractical(int noHoursPractical) {
-        this.noHoursPractical = noHoursPractical;
+    public void setNoOfPracticalHours(int noOfPracticalHours) {
+        this.noOfPracticalHours = noOfPracticalHours;
     }
 
-    public int getnoHoursPractical() {
-        return noHoursPractical;
-
+    public int gitNoOfPracticalHours() {
+        return this.noOfPracticalHours;
     }
 }
-
-
