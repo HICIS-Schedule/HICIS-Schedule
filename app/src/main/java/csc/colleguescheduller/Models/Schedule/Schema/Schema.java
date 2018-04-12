@@ -3,7 +3,6 @@ package csc.colleguescheduller.Models.Schedule.Schema;
 import java.util.Map;
 
 import csc.colleguescheduller.Models.Room.Room;
-import csc.colleguescheduller.Models.Subjects.Subject;
 
 public class Schema {
 
@@ -47,7 +46,7 @@ public class Schema {
         return this.semester;
     }
 
-    public void addSubject(String key, Subject subject) {
+    public void addSubject(String key, SchemaSubject subject) {
         this.subjects.put(key, subject);
     }
 
@@ -55,7 +54,7 @@ public class Schema {
         this.subjects.remove(key);
     }
 
-    public Subject getSubject(String key) {
+    public SchemaSubject getSubject(String key) {
         return this.subjects.get(key);
     }
 
