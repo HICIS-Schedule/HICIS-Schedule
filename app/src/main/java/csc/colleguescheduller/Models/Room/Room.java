@@ -1,54 +1,44 @@
 package csc.colleguescheduller.Models.Room;
 
-/*
-Ahmed Abd El Aziz
- */
-
 public class Room {
-    private String Roomid;
-    private RoomType Type;
-    private int Capacity;
-    private RoomStatus Status;
+    private String id;
+    private RoomType type;
+    private int capacity;
+    private RoomStatus status;
 
-
-    public Room()
-    {
+    public Room() {
 
     }
-    public void SetRoomId(String id)
-    {
-        this.Roomid=id;
-    }
-    public String GetRoomId()
-    {
-        return this.Roomid;
+
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void SetType(RoomType type)
-    {
-        this.Type=type;
-    }
-    public RoomType GetType()
-    {
-        return Type;
+    public String getId() {
+        return this.id;
     }
 
-    public void SetCapacity(int capacity)
-    {
-        this.Capacity=capacity;
-    }
-    public int GetCapacity()
-    {
-        return this.Capacity;
+    public void setType(RoomType type) {
+        this.type = type;
     }
 
-
-    public void SetStatus(RoomStatus status)
-    {
-        this.Status=status;
+    public RoomType getType() {
+        return type;
     }
-    public RoomStatus GetStatus()
-    {
-        return this.Status;
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
+
+    public void setStatus(RoomStatus status) {
+        this.status = status;
+    }
+
+    public RoomStatus getStatus() {
+        return this.status;
     }
 }
