@@ -21,27 +21,22 @@ public class Schema {
     }
 
     public void setYear(Year year) {
-
         this.year = year;
     }
 
     public Year getYear() {
-
         return this.year;
     }
 
     public void setSpecialization(Specialization specialization) {
-
         this.specialization = specialization;
     }
 
     public Specialization getSpecialization() {
-
         return this.specialization;
     }
 
     public void setSemester(Semester semester) {
-
         this.semester = semester;
     }
 
