@@ -1,90 +1,83 @@
 package csc.colleguescheduller.Models.Subjects;
 
-/*
-Bahaa Oyoun Ahmed
- */
-
 import java.util.ArrayList;
-
-import csc.colleguescheduller.Models.Users.StaffMember;
 
 public class Subject {
 
-    private String subjectId;
-    private String Name;
-    private String NameInArabic;
-    private SubjectType Type;
-    private ArrayList<StaffMember> TeachingMembers;
-    private int NumberOfSectionsPractical;
-    private int NumberOfSectionsApplied;
-
-    public Subject(String name) {
-        Name = name;
-    }
+    private String id;
+    private String name;
+    private String nameInArabic;
+    private SubjectType type;
+    private ArrayList<String> teachingMembers;
+    private int noOfPracticalSections;
+    private int noOfAppliedSections;
 
     public Subject() {
         TeachingMembers = new ArrayList<>();
     }
 
-    public String getSubjectId() {
-        return subjectId;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void setSubjectId(String subjectId) {
-        this.subjectId = subjectId;
-    }
-
-    public String getName() {
-        return Name;
+    public String getId() {
+        return this.id;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
-    public String getNameInArabic() {
-        return NameInArabic;
+    public String getName() {
+        return this.name;
     }
 
     public void setNameInArabic(String nameInArabic) {
-        NameInArabic = nameInArabic;
+        this.nameInArabic = nameInArabic;
     }
 
-    public SubjectType getType() {
-        return Type;
+    public String getNameInArabic() {
+        return this.nameInArabic;
     }
 
     public void setType(SubjectType type) {
-        Type = type;
+        this.type = type;
     }
 
-    public ArrayList<StaffMember> getTeachingMembers() {
-        return TeachingMembers;
+    public SubjectType getType() {
+        return this.type;
     }
 
-    public void setTeachingMembers(ArrayList<StaffMember> teachingMembers) {
-        TeachingMembers = teachingMembers;
+    public void addTeachingMember(String teachingMember) {
+        this.teachingMembers.add(teachingMember);
     }
 
-    public int getNumberOfSectionsPractical() {
-        return NumberOfSectionsPractical;
+    public void removeTeachingMember(String teachingMember) {
+        this.teachingMembers.remove(teachingMember);
     }
 
-    public void setNumberOfSectionsPractical(int numberOfSectionsPractical) {
-        NumberOfSectionsPractical = numberOfSectionsPractical;
+    public void setTeachingMembers(ArrayList<String> teachingMembers) {
+        this.teachingMembers = teachingMembers;
     }
 
-    public int getNumberOfSectionsApplied() {
-        return NumberOfSectionsApplied;
+    public ArrayList<String> getTeachingMembers() {
+        return this.teachingMembers;
     }
 
-    public void setNumberOfSectionsApplied(int numberOfSectionsApplied) {
-        NumberOfSectionsApplied = numberOfSectionsApplied;
+    public void setNumberOfPracticalSections(int noOfPracticalSections) {
+        this.noOfPracticalSections = noOfPracticalSections;
     }
 
-    public void add() {
+    public int getNumberOfPracticalSections() {
+        return this.noOfPracticalSections;
     }
 
-    public void remove() {
+    public void setNumberOfAppliedSections(int noOfAppliedSections) {
+        this.noOfAppliedSections = noOfAppliedSections;
     }
+
+    public int getNumberOfAppliedSections() {
+        return this.noOfAppliedSections;
+    }
+
 }
