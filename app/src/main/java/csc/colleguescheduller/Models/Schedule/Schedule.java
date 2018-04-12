@@ -11,7 +11,7 @@ public class Schedule {
     private Year year;
     private Specialization specialization;
     private Semester semester;
-    private Map<String, Object> day;
+    private Map<String, ScheduleDay> day;
 
     public Schedule() {
 

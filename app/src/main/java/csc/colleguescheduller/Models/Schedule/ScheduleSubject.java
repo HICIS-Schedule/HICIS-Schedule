@@ -1,51 +1,37 @@
-/**
- * @author SiCo
- */
-/**
- * @author SiCo
- *
- */
 package csc.colleguescheduller.Models.Schedule;
-
-/*
-Amr Samir
- */
-
-
 
 public class ScheduleSubject {
 
     private String subject;
-    private int startpoint;
-    private int endpoint;
+    private int startPoint;
+    private int enPpoint;
 
     public ScheduleSubject() {
-        super();
+        
     }
 
-
-    public void setsubject(String subject) {
+    public void setSubject(String subject) {
         this.subject = subject;
     }
 
-    public String getsubject() {
-        return subject;
+    public String getSubject() {
+        return this.subject;
     }
 
-    public void setstartpoint(int startpoint) {
-        this.startpoint = startpoint;
+    public void setStartPoint(int startPoint) {
+        this.startPoint = startPoint;
     }
 
-    public int getstartpoint() {
-        return startpoint;
+    public int getStartPoint() {
+        return this.startPoint;
     }
 
-    public void setendpoint(int endpoint) {
-        this.endpoint = endpoint;
+    public void setEndPoint(int endPoint) {
+        this.endPoint = endPoint;
     }
 
-    public int getendpoint() {
-        return endpoint;
+    public int getEndPoint() {
+        return this.enPpoint;
     }
 
 }
