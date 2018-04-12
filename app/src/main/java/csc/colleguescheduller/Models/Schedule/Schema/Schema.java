@@ -1,84 +1,81 @@
 package csc.colleguescheduller.Models.Schedule.Schema;
 
-/*
-Amr Samir
- */
-
-
 import java.util.Map;
 
 import csc.colleguescheduller.Models.Room.Room;
+import csc.colleguescheduller.Models.Subjects.Subject;
 
-public class Schema{
+public class Schema {
 
     private Year year;
     private Specialization specialization;
     private Semester semester;
     private Map<String, Object> subjects;
-    private int noStudents;
+    private int noOfStudents;
     private Room hall;
 
-
-
-
     public Schema() {
-        super();
+
     }
 
-    public void setyear(Year year ) {
+    public void setYear(Year year) {
 
-        this.year=year;
+        this.year = year;
     }
 
-    public Year getyear() {
+    public Year getYear() {
 
-        return year;
+        return this.year;
     }
 
-    public void setpecialization(Specialization specialization) {
+    public void setSpecialization(Specialization specialization) {
 
-        this.specialization=specialization;
+        this.specialization = specialization;
     }
 
-    public Specialization getspecialization() {
+    public Specialization getSpecialization() {
 
-        return specialization;
+        return this.specialization;
     }
 
-    public void setsemestertype(Semester smestertype) {
+    public void setSemester(Semester semester) {
 
-        this.semester=semester;
+        this.semester = semester;
     }
 
-    public Semester getsemestertype() {
-        return semester;
+    public Semester getSemester() {
+        return this.semester;
     }
 
-    public void setsubject(Map<String, Object> subject) {
-        this.subjects=subject;
+    public void addSubject(String key, Subject subject) {
+        this.subjects.put(key, subject);
     }
 
-    public Map<String, Object> getsubjects() {
-        return subjects;
+    public void removeSubject(String key) {
+        this.subjects.remove(key);
     }
 
-    public void setnoStudents(int noStudents) {
-        this.noStudents=noStudents;
+    public Subject getSubject(String key) {
+        return this.subjects.get(key);
     }
 
-    public int getnoStudents() {
-        return noStudents;
+    public Map<String, Object> getSubjectList() {
+        return this.subjects;
     }
 
-    public void sethall(Room hall) {
-        this.hall=hall;
+    public void setNoOfStudents(int noOfStudents) {
+        this.noOfStudents = noOfStudents;
     }
 
-    public Room gethall() {
-        return hall;
+    public int getNoOfStudents() {
+        return this.noOfStudents;
     }
 
+    public void setHall(Room hall) {
+        this.hall = hall;
+    }
 
+    public Room getHall() {
+        return this.hall;
+    }
 }
-		
-		
