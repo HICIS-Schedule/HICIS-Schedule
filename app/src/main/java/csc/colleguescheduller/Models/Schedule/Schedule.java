@@ -1,7 +1,9 @@
 package csc.colleguescheduller.Models.Schedule;
 
-import csc.colleguescheduller.Models.Schedule.Schema;
-import csc.colleguescheduller.Models.Schema.Schema;
+import csc.colleguescheduller.Models.Globals.Semester;
+import csc.colleguescheduller.Models.Globals.Specialization;
+import csc.colleguescheduller.Models.Globals.Year;
+
 import java.util.Map;
 
 public class Schedule {
